@@ -1,16 +1,5 @@
 # 🔍 Phishing Link Detector
-
-\<p align="center">
-&#x20; A Google Chrome extension designed to help users detect and avoid phishing links using the XGBoost algorithm and DomainTrustScore. Provides real-time URL detection, user-friendly warnings, and easy-to-follow installation and usage instructions.
-\</p>
-
-\<p align="center">
-&#x20; \<img src="[https://img.shields.io/badge/Platform-Google%20Chrome-blue?logo=googlechrome&logoColor=white](https://img.shields.io/badge/Platform-Google%20Chrome-blue?logo=googlechrome\&logoColor=white)" alt="Platform">
-&#x20; \<img src="[https://img.shields.io/badge/Algorithm-XGBoost-orange](https://img.shields.io/badge/Algorithm-XGBoost-orange)" alt="Algorithm">
-&#x20; \<img src="[https://img.shields.io/badge/Features-27-informational](https://img.shields.io/badge/Features-27-informational)" alt="Features">
-&#x20; \<img src="[https://img.shields.io/badge/Status-Research%20Project-success](https://img.shields.io/badge/Status-Research%20Project-success)" alt="Status">
-\</p>
-
+A Google Chrome extension designed to help users detect and avoid phishing links using the XGBoost algorithm and DomainTrustScore. Provides real-time URL detection, user-friendly warnings, and easy-to-follow installation and usage instructions.
 ---
 
 ## 📌 About
