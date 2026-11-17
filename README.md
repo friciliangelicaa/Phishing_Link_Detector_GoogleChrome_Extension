@@ -30,7 +30,6 @@ The extension automatically analyzes URLs whenever users navigate to a website. 
 This allows users to browse normally when no phishing threat is detected while receiving a warning when a potentially harmful URL is identified.
 
 ## 🖼️ Screenshots
-**Phishing Warning Page**
 The following screenshot shows the warning page displayed when the extension detects a URL as phishing, alerting users to the potential security risk.
 <p align="center">
   <img src="screenshot/warning_page.jpeg" alt="Phishing Link Detector Warning Page" width="750">
