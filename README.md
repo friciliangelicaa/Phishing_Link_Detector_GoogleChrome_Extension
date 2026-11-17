@@ -83,7 +83,7 @@ The following URLs can be used to test the extension and verify its detection re
 | 2. | (http://www.web-design.review)                |
 | 3. | (http://7054company.github.io/etherumwalle)   |
 
-**Note**: The phishing URLs should be taken from verified test samples and tested using the extension before being included here.
+**Note**: The phishing URLs are selected from the dataset used for the extension demonstration and have been tested to verify their detection results.
 
 ## ⚙️ Technologies Used
 
