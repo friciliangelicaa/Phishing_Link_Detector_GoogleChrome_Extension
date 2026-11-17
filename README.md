@@ -82,4 +82,4 @@ This project was developed as part of an undergraduate thesis research project o
 
 ---
 
-\<p align="center">   \<sub>Developed for research and educational purposes.\</sub> \</p>
+Developed for research and educational purposes.
