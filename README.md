@@ -65,6 +65,26 @@ Follow these steps to install the extension manually:
 4. If the URL is classified as phishing, a warning page will appear.
 5. Review the warning information before deciding whether to leave the website or proceed.
 
+## 🧪 Testing the Extension
+
+The following URLs can be used to test the extension and verify its detection results.
+
+*Legitimate URLs*
+| No.| URL                            |
+| -- | ------------------------------ |
+| 1. | (https://www.google.com)       |
+| 2. | (https://www.wikipedia.org)    |
+| 3. | (https://www.instagram.com/)   |
+
+*Phishing URLs*
+| No.| URL                                           |
+| -- | --------------------------------------------- |
+| 1. | (http://www.kuradox92.lima-city.de)           |
+| 2. | (http://www.web-design.review)                |
+| 3. | (http://7054company.github.io/etherumwalle)   |
+
+**Note**: The phishing URLs should be taken from verified test samples and tested using the extension before being included here.
+
 ## ⚙️ Technologies Used
 
 | Technology                  | Purpose                                                           |
