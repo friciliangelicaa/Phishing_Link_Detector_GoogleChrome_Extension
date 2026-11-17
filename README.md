@@ -21,6 +21,21 @@ By automatically analyzing URLs during navigation, the extension helps users bec
 | ⚠️ Warning Page            | Redirects users to a warning page when a URL is detected as phishing.            |
 | 🛡️ User Protection        | Helps users make informed decisions when encountering potentially harmful links. |
 
+## 🔍 Detection Behavior 
+The extension automatically analyzes URLs whenever users navigate to a website. Based on the classification result, the extension behaves differently:
+
+- **Legitimate URL**: If a URL is classified as legitimate, the website opens normally without displaying a warning page. Users can continue browsing as usual.
+- **Phishing URL**: If a URL is classified as phishing, the extension redirects the user to a warning page to notify them of the potential risk before proceeding.
+
+This allows users to browse normally when no phishing threat is detected while receiving a warning when a potentially harmful URL is identified.
+
+## 🖼️ Screenshots
+**Phishing Warning Page**
+The following screenshot shows the warning page displayed when the extension detects a URL as phishing, alerting users to the potential security risk.
+<p align="center">
+  <img src="screenshot/warning_page.jpeg" alt="Phishing Link Detector Warning Page" width="750">
+</p>
+
 ## 🚀 Installation Guide
 
 Follow these steps to install the extension manually:
