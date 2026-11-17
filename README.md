@@ -1,11 +1,9 @@
 # 🔍 Phishing Link Detector
 A Google Chrome extension designed to help users detect and avoid phishing links using the XGBoost algorithm and DomainTrustScore. Provides real-time URL detection, user-friendly warnings, and easy-to-follow installation and usage instructions.
 
----
-
 ## 📌 About
 
-**Phishing Link Detector** is a browser extension developed to help users identify potentially harmful phishing links while browsing the internet.
+Phishing Link Detector is a browser extension developed to help users identify potentially harmful phishing links while browsing the internet.
 
 The extension uses the **XGBoost machine learning algorithm** and **DomainTrustScore** to analyze URLs and classify them into two categories: phishing and legitimate.
 
