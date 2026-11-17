@@ -20,12 +20,11 @@ By automatically analyzing URLs during navigation, the extension helps users bec
 | 🛡️ User Protection        | Helps users make informed decisions when encountering potentially harmful links. |
 
 ## 🔍 Detection Behavior 
-The extension automatically analyzes URLs whenever users navigate to a website. Based on the classification result, the extension behaves differently:
+Based on the classification result, the extension behaves differently:
 
 - **Legitimate URL**: If a URL is classified as legitimate, the website opens normally without displaying a warning page. Users can continue browsing as usual.
 - **Phishing URL**: If a URL is classified as phishing, the extension redirects the user to a warning page to notify them of the potential risk before proceeding.
 
-This allows users to browse normally when no phishing threat is detected while receiving a warning when a potentially harmful URL is identified.
 
 ## 🖼️ Screenshots
 The following screenshot shows the warning page displayed when the extension detects a URL as phishing, alerting users to the potential security risk.
@@ -61,9 +60,9 @@ Follow these steps to install the extension manually:
 
 1. Open Google Chrome after installing the extension.
 2. Browse the internet as usual.
-3. When navigating to a website, the extension automatically analyzes its URL.
-4. If the URL is classified as phishing, a warning page will appear.
-5. Review the warning information before deciding whether to leave the website or proceed.
+3. Navigate to any website you want to visit.
+4. If a warning page appears, review the displayed information carefully.
+5. Follow the instructions on the warning page to decide whether to leave the website or proceed.
 
 ## 🧪 Testing the Extension
 
@@ -72,16 +71,16 @@ The following URLs can be used to test the extension and verify its detection re
 *Legitimate URLs*
 | No.| URL                            |
 | -- | ------------------------------ |
-| 1. | (https://www.google.com)       |
-| 2. | (https://www.wikipedia.org)    |
-| 3. | (https://www.instagram.com/)   |
+| 1  | https://www.google.com         |
+| 2  | https://www.wikipedia.org      |
+| 3  | https://www.instagram.com      |
 
 *Phishing URLs*
 | No.| URL                                           |
 | -- | --------------------------------------------- |
-| 1. | (http://www.kuradox92.lima-city.de)           |
-| 2. | (http://www.web-design.review)                |
-| 3. | (http://7054company.github.io/etherumwalle)   |
+| 1  | http://www.kuradox92.lima-city.de             |
+| 2  | http://www.web-design.review                  |
+| 3  | http://7054company.github.io/etherumwalle     |
 
 **Note**: The phishing URLs are selected from the dataset used for the extension demonstration and have been tested to verify their detection results.
 
