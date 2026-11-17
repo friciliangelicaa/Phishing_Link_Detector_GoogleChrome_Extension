@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Peringatan Keamanan</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 24px;
+
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Arial,
+            sans-serif;
+
+        background:
+            #f6f7f9;
+
+        color: #1f2937;
+    }
+
+    .warning-card {
+        width: 100%;
+        max-width: 680px;
+
+        background: #ffffff;
+
+        border: 1px solid #e5e7eb;
+
+        border-radius: 18px;
+
+        padding: 42px;
+
+        box-shadow:
+            0 12px 35px rgba(0, 0, 0, 0.08);
+
+        text-align: center;
+    }
+
+    /* ==============================
+       ICON
+    ============================== */
+
+    .warning-icon {
+        width: 76px;
+        height: 76px;
+
+        margin: 0 auto 22px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: #fff1f2;
+
+        color: #dc2626;
+
+        font-size: 38px;
+
+        font-weight: 700;
+    }
+
+    /* ==============================
+       TITLE
+    ============================== */
+
+    h1 {
+        margin: 0;
+
+        font-size: 30px;
+
+        line-height: 1.25;
+
+        color: #111827;
+    }
+
+    .subtitle {
+        margin: 12px auto 0;
+
+        max-width: 520px;
+
+        font-size: 16px;
+
+        line-height: 1.6;
+
+        color: #6b7280;
+    }
+
+    /* ==============================
+       BADGE
+    ============================== */
+
+    .badge {
+        display: inline-flex;
+
+        align-items: center;
+
+        gap: 7px;
+
+        margin-top: 22px;
+
+        padding: 8px 14px;
+
+        border-radius: 999px;
+
+        background: #fef2f2;
+
+        color: #b91c1c;
+
+        font-size: 13px;
+
+        font-weight: 700;
+
+        letter-spacing: 0.2px;
+    }
+
+    .badge-dot {
+        width: 7px;
+        height: 7px;
+
+        border-radius: 50%;
+
+        background: #dc2626;
+    }
+
+    /* ==============================
+       URL CARD
+    ============================== */
+
+    .url-section {
+        margin-top: 30px;
+
+        padding: 20px;
+
+        text-align: left;
+
+        border-radius: 12px;
+
+        border: 1px solid #e5e7eb;
+
+        background: #f9fafb;
+    }
+
+    .url-label {
+        display: block;
+
+        margin-bottom: 9px;
+
+        font-size: 12px;
+
+        font-weight: 700;
+
+        text-transform: uppercase;
+
+        letter-spacing: 0.6px;
+
+        color: #6b7280;
+    }
+
+    .url {
+        display: block;
+
+        max-height: 120px;
+
+        overflow-y: auto;
+
+        word-break: break-all;
+
+        font-family:
+            "Cascadia Code",
+            "Consolas",
+            monospace;
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        color: #374151;
+    }
+
+    /* ==============================
+       WARNING MESSAGE
+    ============================== */
+
+    .message {
+        margin-top: 24px;
+
+        padding: 16px 18px;
+
+        border-radius: 10px;
+
+        background: #fffbeb;
+
+        border: 1px solid #fde68a;
+
+        color: #92400e;
+
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        text-align: left;
+    }
+
+    .message strong {
+        color: #78350f;
+    }
+
+    /* ==============================
+       QUESTION
+    ============================== */
+
+    .question {
+        margin: 28px 0 18px;
+
+        font-size: 16px;
+
+        font-weight: 600;
+
+        color: #374151;
+    }
+
+    /* ==============================
+       BUTTONS
+    ============================== */
+
+    .buttons {
+        display: flex;
+
+        gap: 12px;
+
+        justify-content: center;
+    }
+
+    button {
+        flex: 1;
+
+        min-height: 46px;
+
+        padding: 12px 20px;
+
+        border-radius: 9px;
+
+        font-family: inherit;
+
+        font-size: 14px;
+
+        font-weight: 700;
+
+        cursor: pointer;
+
+        transition:
+            background 0.15s ease,
+            border-color 0.15s ease,
+            transform 0.1s ease;
+    }
+
+    button:active {
+        transform: translateY(1px);
+    }
+
+    /* Keluar */
+
+    #exitButton {
+        border: 1px solid #d1d5db;
+
+        background: #ffffff;
+
+        color: #374151;
+    }
+
+    #exitButton:hover {
+        background: #f3f4f6;
+
+        border-color: #9ca3af;
+    }
+
+    /* Tetap lanjut */
+
+    #continueButton {
+        border: 1px solid #dc2626;
+
+        background: #dc2626;
+
+        color: #ffffff;
+    }
+
+    #continueButton:hover {
+        background: #b91c1c;
+
+        border-color: #b91c1c;
+    }
+
+    /* ==============================
+       FOOTER NOTE
+    ============================== */
+
+    .note {
+        margin: 22px auto 0;
+
+        max-width: 500px;
+
+        font-size: 12px;
+
+        line-height: 1.6;
+
+        color: #9ca3af;
+    }
+
+    /* ==============================
+       RESPONSIVE
+    ============================== */
+
+    @media (max-width: 600px) {
+
+        body {
+            padding: 16px;
+        }
+
+        .warning-card {
+            padding: 30px 22px;
+
+            border-radius: 15px;
+        }
+
+        .warning-icon {
+            width: 64px;
+            height: 64px;
+
+            font-size: 32px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+        }
+
+        .buttons {
+            flex-direction: column-reverse;
+        }
+
+        button {
+            width: 100%;
+        }
+
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+    
+<main class="warning-card">
+
+    <div class="warning-icon">
+        !
+    </div>
+
+    <h1>
+        Tautan Berisiko Terdeteksi
+    </h1>
+
+    <p class="subtitle">
+        Sistem mendeteksi karakteristik pada tautan ini
+        yang mengindikasikan kemungkinan
+        <strong>phishing</strong>.
+    </p>
+
+    <div class="badge">
+        <span class="badge-dot"></span>
+        Phishing Terdeteksi
+    </div>
+
+    <section class="url-section">
+
+        <span class="url-label">
+            URL tujuan
+        </span>
+
+        <span
+            id="url"
+            class="url"
+        >
+            Memuat URL...
+        </span>
+
+    </section>
+
+    <div class="message">
+
+        <strong>Perhatian:</strong>
+        Tautan phishing dapat digunakan untuk
+        mengarahkan pengguna ke halaman palsu
+        atau memperoleh informasi sensitif,
+        seperti akun dan kata sandi.
+
+    </div>
+
+    <p class="question">
+        Apakah Anda tetap ingin mengakses tautan ini?
+    </p>
+
+    <div class="buttons">
+
+        <button id="exitButton">
+            Keluar
+        </button>
+
+        <button id="continueButton">
+            Tetap Lanjut
+        </button>
+
+    </div>
+
+    <p class="note">
+        Sistem memberikan peringatan berdasarkan hasil
+        deteksi. Keputusan untuk melanjutkan akses
+        tetap berada pada pengguna.
+    </p>
+
+</main>
+
+<script src="blocked.js"></script>
+
+
+</body>
+
+</html>
