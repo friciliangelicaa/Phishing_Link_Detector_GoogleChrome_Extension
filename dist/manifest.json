@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Link Detector",
+  "version": "1.0.5",
+  "description": "Extension untuk mendeteksi tautan phishing menggunakan XGBoost Publik.",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "webNavigation",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:5000/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}
