@@ -29,7 +29,10 @@ Based on the classification result, the extension behaves differently:
 ## 🖼️ Screenshots
 The following screenshot shows the warning page displayed when the extension detects a URL as phishing, alerting users to the potential security risk.
 <p align="center">
-  <img src="screenshot/warning_page.jpeg" alt="Phishing Link Detector Warning Page" width="750">
+  <img src="screenshot/warning_page1.png" alt="Phishing Link Detector Warning Page" width="750">
+</p>
+<p align="center">
+  <img src="screenshot/warning_page2.png" alt="Phishing Link Detector Warning Page" width="750">
 </p>
 
 ## 🚀 Installation Guide
